@@ -18,7 +18,7 @@ You can run your application in dev mode that enables live coding using:
 
 > **_Contrato 1.1:_** @POST http://localhost:8080/employees
 
-```json
+```yaml
 {
   "gender": {
     "id": 1
@@ -34,7 +34,7 @@ You can run your application in dev mode that enables live coding using:
 
 > **_Contrato 1.2:_** @POST http://localhost:8080/employees/by-job-id
 
-```json
+```yaml
 {
   "jobId": 3
 }
@@ -45,7 +45,7 @@ You can run your application in dev mode that enables live coding using:
 
 > **_Contrato 1.4:_** @POST http://localhost:8080/employees/workHours
 
-```json
+```yaml
 {
   "employee_id": 1,
   "start_date": "2019-01-01",
@@ -54,8 +54,8 @@ You can run your application in dev mode that enables live coding using:
 ```
 
 > **_Contrato 1.4:_** @POST http://localhost:8080/employees/payWorkHours
-```json
 
+```yaml
 {
   "employee_id": 1,
   "start_date": "2019-01-01",
