@@ -16,7 +16,7 @@ You can run your application in dev mode that enables live coding using:
 
 ## Endpoints / JSON Request
 
-> **_Contrato 1.1:_**  http://localhost:8080/employees
+> **_Contrato 1.1:_** @POST http://localhost:8080/employees
 
 ```json
 {
@@ -32,7 +32,7 @@ You can run your application in dev mode that enables live coding using:
 }
 ```
 
-> **_Contrato 1.2:_**  http://localhost:8080/employees/by-job-id
+> **_Contrato 1.2:_** @POST http://localhost:8080/employees/by-job-id
 
 ```json
 {
@@ -41,9 +41,9 @@ You can run your application in dev mode that enables live coding using:
 ```
 
 
-> **_Contrato 1.3:_**  http://localhost:8080/employees/multi-hilos
+> **_Contrato 1.3:_** @GET http://localhost:8080/employees/multi-hilos
 
-> **_Contrato 1.4:_**  http://localhost:8080/employees/workHours
+> **_Contrato 1.4:_** @POST http://localhost:8080/employees/workHours
 
 ```json
 {
@@ -53,7 +53,7 @@ You can run your application in dev mode that enables live coding using:
 }
 ```
 
-> **_Contrato 1.4:_**  http://localhost:8080/employees/payWorkHours
+> **_Contrato 1.4:_** @POST http://localhost:8080/employees/payWorkHours
 ```json
 
 {
