@@ -185,7 +185,7 @@ public class EmployeeResource {
     }
 
     @POST
-    @Path("/payments")
+    @Path("/payWorkHours")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response getTotalPayment(JsonObject input) {

@@ -43,7 +43,7 @@ You can run your application in dev mode that enables live coding using:
 
 > **_Contrato 1.3:_** @GET http://localhost:8080/employees/multi-hilos
 
-> **_Contrato 1.4:_** @POST http://localhost:8080/employees/workHours
+> **_Contrato 1.4:_** @POST http://localhost:8080/employees/countWorkHours
 
 ```yaml
 {
