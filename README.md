@@ -11,7 +11,57 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/{pathResource}.
+
+
+## Endpoints / JSON Request
+
+> **_Contrato 1.1:_**  http://localhost:8080/employees
+
+```json
+{
+  "gender": {
+    "id": 1
+  },
+  "job": {
+    "id": 3
+  },
+  "name": "Cyberia",
+  "lastName": "Virtual",
+  "birthDate": "1980-02-10"
+}
+```
+
+> **_Contrato 1.2:_**  http://localhost:8080/employees/by-job-id
+
+```json
+{
+  "jobId": 3
+}
+```
+
+
+> **_Contrato 1.3:_**  http://localhost:8080/employees/multi-hilos
+
+> **_Contrato 1.4:_**  http://localhost:8080/employees/workHours
+
+```json
+{
+  "employee_id": 1,
+  "start_date": "2019-01-01",
+  "end_date": "2024-06-30"
+}
+```
+
+> **_Contrato 1.4:_**  http://localhost:8080/employees/payWorkHours
+```json
+
+{
+  "employee_id": 1,
+  "start_date": "2019-01-01",
+  "end_date": "2024-06-30"
+}
+```
 
 ## Packaging and running the application
 
